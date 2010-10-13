@@ -54,7 +54,7 @@ fi</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^E</string>
+	<string>@E</string>
 	<key>name</key>
 	<string>Evaluate Selection</string>
 	<key>output</key>
