@@ -219,7 +219,7 @@ end
 	<key>name</key>
 	<string>Run Script</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.scheme</string>
 	<key>uuid</key>

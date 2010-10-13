@@ -47,18 +47,18 @@ elif [ $CMD == "racket" ] ; then
 	fi
 
 elif [ $CMD == "csi" ] ; then
-	"$INTERPRET" -q &lt; /dev/stdin
+	"$INTERPRET" -q &amp;lt; /dev/stdin
 fi</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>@E</string>
+	<string>^E</string>
 	<key>name</key>
-	<string>Evaluate Selection</string>
+	<string>Evaluate Selection Old</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.scheme</string>
 	<key>uuid</key>
