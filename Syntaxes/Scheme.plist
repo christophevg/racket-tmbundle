@@ -38,7 +38,7 @@
 	<key>keyEquivalent</key>
 	<string>^~S</string>
 	<key>name</key>
-	<string>Scheme</string>
+	<string>Racket</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -70,18 +70,39 @@
 	<dict>
 		<key>comment</key>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
+			<key>patterns</key>
+			<array>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.scheme</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(;).*$\n?</string>
 					<key>name</key>
-					<string>punctuation.definition.comment.scheme</string>
+					<string>comment.line.semicolon.scheme</string>
 				</dict>
-			</dict>
-			<key>match</key>
-			<string>(;).*$\n?</string>
-			<key>name</key>
-			<string>comment.line.semicolon.scheme</string>
+				<dict>
+					<key>begin</key>
+					<string>#\|</string>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.scheme</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\|#</string>
+					<key>name</key>
+					<string>comment.multiline.scheme</string>
+				</dict>
+			</array>
 		</dict>
 		<key>constants</key>
 		<dict>
@@ -104,7 +125,7 @@
 		<key>illegal</key>
 		<dict>
 			<key>match</key>
-			<string>[()\[\]]</string>
+			<string>[()]</string>
 			<key>name</key>
 			<string>invalid.illegal.parenthesis.scheme</string>
 		</dict>
@@ -115,7 +136,7 @@
 				<dict>
 					<key>match</key>
 					<string>(?x)
-						(?&lt;=(\s|\(|\[)) # preceded by space or ( 
+						(?&lt;=(\(|\[)) # preceded by ( or [
 						( do|or|and|else|quasiquote|begin|if|case|set!|
 						  cond|let|unquote|define|let\*|unquote-splicing|delay|
 						  letrec)
