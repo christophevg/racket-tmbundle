@@ -1,6 +1,31 @@
-To get this TextMate bundle, run the following commands in your Terminal:
+Racket TextMate Bundle
+Christophe VG <contact@christophe.vg>
 
-mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-cd ~/Library/Application\ Support/TextMate/Bundles
-git clone git://github.com/nkostelnik/racket-tmbundle.git Racket.tmbundle
-osascript -e 'tell app "TextMate" to reload bundles'
+---
+
+CREDITS
+This repository is a fork of the work by Nicholas Kostelnik. Since the
+repository was untouched for over 2 years and I needed some basic Racket
+support in TextMate 2, I decided to create this fork and try to make it
+functional.
+
+DISCLAIMER
+This is my first attempt at managing a TextMate Bundle, so things
+will be pretty rough around the edges at times. But since I'll be using this
+bundle myself for the next few months (at least), I hope that it soon will
+become useful and stable enough for anyone to us. Feel free to provide me with
+feedback of any kind.
+
+INSTALL
+To get this TextMate bundle functional using TextMate 2, run the following
+commands in your Terminal:
+
+$ mkdir -p ~/Library/Application\ Support/Avian/Bundles
+$ cd ~/Library/Application\ Support/Avian/Bundles
+$ git clone https://github.com/christophevg/racket-tmbundle.git Racket.tmbundle
+$ rm ~/Library/Caches/com.macromates.TextMate/BundlesIndex.binary
+
+(See https://github.com/textmate/textmate/wiki/FAQ#known-limitations for more
+ info on installing and managing Bundles under TextMate 2)
+
+Now restart TextMate and your should now have Racket support.
