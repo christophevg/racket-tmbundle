@@ -42,7 +42,7 @@ end
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>source.scheme</string>
+	<string>source.racket</string>
 	<key>uuid</key>
 	<string>CBFEB6F9-D38C-4726-BD16-325E3FCC0C6B</string>
 	<key>version</key>
