@@ -14,8 +14,7 @@ require ENV["TM_SUPPORT_PATH"] + "/lib/escape"
 TextMate.save_current_document
 TextMate::Executor.make_project_master_current_document
 
-args = []
-args &lt;&lt; "racket" &lt;&lt; "-l" &lt;&lt; "errortrace" &lt;&lt; "-t"
+args = [ "racket" ]
 
 TextMate::Executor.run(args, ENV["TM_FILEPATH"]) do |line,type|
   if line =~ /(.*):([0-9]+):([0-9]+):(.*)/ then
