@@ -28,4 +28,15 @@ $ rm ~/Library/Caches/com.macromates.TextMate/BundlesIndex.binary
 (See https://github.com/textmate/textmate/wiki/FAQ#known-limitations for more
  info on installing and managing Bundles under TextMate 2)
 
-Now restart TextMate and your should now have Racket support.
+If you installed Racket from http://racket-lang.org and followed the
+instructions, the CLI version of racket is in /Applications/Racket vx.y.z/bin.
+
+I added a symbolic link to it from /usr/local/bin. You may choose to do it
+otherwise ;-)
+
+$ ln -s "/Applications/Racket v5.3.6/bin/racket" /usr/local/bin/racket
+$ which racket
+/usr/local/bin/racket
+
+Now restart TextMate, make sure that /usr/local/bin is in the search path of
+Textmate and your should now have Racket support.
