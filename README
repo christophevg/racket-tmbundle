@@ -10,15 +10,15 @@ support in TextMate 2, I decided to create this fork and try to make it
 functional.
 
 DISCLAIMER
-This is my first attempt at managing a TextMate Bundle, so things
-will be pretty rough around the edges at times. But since I'll be using this
-bundle myself for the next few months (at least), I hope that it soon will
-become useful and stable enough for anyone to us. Feel free to provide me with
+This is my first attempt at managing a TextMate Bundle, so things will be
+pretty rough around the edges at times. But since I'll be using this bundle
+myself for the next few months (at least), I hope that it soon will become
+useful and stable enough for anyone to use. Feel free to provide me with
 feedback of any kind.
 
 INSTALL
 To get this TextMate bundle functional using TextMate 2, run the following
-commands in your Terminal:
+commands in a Terminal:
 
 $ mkdir -p ~/Library/Application\ Support/Avian/Bundles
 $ cd ~/Library/Application\ Support/Avian/Bundles
@@ -38,5 +38,5 @@ $ ln -s "/Applications/Racket v5.3.6/bin/racket" /usr/local/bin/racket
 $ which racket
 /usr/local/bin/racket
 
-Now restart TextMate, make sure that /usr/local/bin is in the search path of
-Textmate and your should now have Racket support.
+Now restart TextMate, make sure that /usr/local/bin is in the search path and
+you should now have some basic editing support for Racket.
