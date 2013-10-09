@@ -138,7 +138,7 @@
 					<string>(?x)
 						(?&lt;=(\(|\[)) # preceded by ( or \[
 						( do|or|and|else|quasiquote|begin|if|case|set!|
-						  cond|let|unquote|define|let\*|unquote-splicing|delay|
+						  cond|let|unquote|define(-datatype)*|let\*|unquote-splicing|delay|
 						  letrec)
 						(?=(\s|\())</string>
 					<key>name</key>
@@ -264,7 +264,7 @@
 						  vector(?:-length|-ref)
 							
 							# additional keyword-like functions
-							|for|when|printf
+							|for|when|printf|require
 						)
 						(?=(\s|\()) # followed by space or (
 					</string>
